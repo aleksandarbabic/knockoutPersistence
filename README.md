@@ -12,7 +12,7 @@ https://github.com/jimrhoskins/knockout.localStorage/blob/master/knockout.localS
 
     function ViewModel() {
         this.persons = ko.observableArray([],{persist: 'VM_persons'});
-        this.city = ko.observable(null,{persist: 'VM_city'});
+        this.city = ko.observable(new City({}),{persist: 'VM_city'});
     }
 
     function Person(data,ord){
