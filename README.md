@@ -15,14 +15,14 @@ https://github.com/jimrhoskins/knockout.localStorage/blob/master/knockout.localS
         this.city = ko.observable(null,{persist: 'VM_city'});
     }
 
-    function Person(ord){
+    function Person(data,ord){
       ord = ord ? ord : '';
       this.objectNameID = 'Person';
       this.orderNumberID = ko.observable(ord,{persist: 'Person_orderNumberId'+ord;});
       this.name = ko.observable(null,{persist: 'Person_name'+ord});
     }
 
-    function City(ord){
+    function City(data,ord){
       ord = ord ? ord : '';
       this.objectNameID = 'City';
       this.orderNumberID = ko.observable(ord,{persist: 'City_orderNumberId'+ord;});
