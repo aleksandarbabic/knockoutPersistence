@@ -1,5 +1,5 @@
 (function(ko){
-	if (!window.localStorage){
+    if (!window.localStorage){
         return;
     } else {
 		  var methods = ['observable','observableArray'];
